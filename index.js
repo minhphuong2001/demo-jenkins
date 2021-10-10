@@ -9,6 +9,10 @@ const router = require("./routers");
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    res.send("welcome");
+})
+
 router(app);
 
 const PORT = process.env.PORT || 5000
