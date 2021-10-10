@@ -22,6 +22,10 @@ const bookSchema = new mongoose.Schema({
     ref: "category",
     required: true,
   },
-});
+},
+  {
+    timestamps: true
+  }
+);
 
 module.exports = mongoose.model("book", bookSchema);

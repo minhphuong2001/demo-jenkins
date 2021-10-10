@@ -9,10 +9,15 @@ router
   .get(bookController.getAllBook)
   .post(bookController.createBook);
 
+// router
+//   .route("/category/:id")
+//   .get(bookController.getBookByCategory),
+
 router
   .route("/:id")
   .get(bookController.getBook)
   .put(bookController.updateBook)
-  .delete(bookController.deleteBook);
+  .delete(bookController.deleteBook)
+  .post(bookController.createBook);
 
 module.exports = router;
