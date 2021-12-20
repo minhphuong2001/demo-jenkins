@@ -10,7 +10,7 @@ const router = require("./routers");
 app.use(express.json());
 
 app.get("/", (req, res) => {
-    res.send("welcome");
+    res.send("welcome to myapp");
 })
 
 router(app);
