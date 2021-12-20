@@ -13,6 +13,10 @@ app.get("/", (req, res) => {
     res.send("welcome to myapp");
 })
 
+app.get('/about', (req, res) => {
+    res.send('this is about page.')
+})
+
 router(app);
 
 const PORT = process.env.PORT || 5000
